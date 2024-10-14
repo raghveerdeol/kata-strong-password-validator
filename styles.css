@@ -6,6 +6,7 @@
 body{
     background-color: #063241;
 }
+
 .container{
     background-color: white;
     border: 1px solid transparent;
@@ -28,6 +29,7 @@ ul{
     list-style: none;
     margin-top: 2rem;
 }
+
 .cross{
     color: grey;
 }
@@ -39,4 +41,39 @@ ul{
 }
 .tick::before{
     content: '✔ ';
+}
+
+.loader{
+    margin-top: 1rem;
+    width: 100%;
+    height: 15px;
+    background-color: grey;
+}
+
+.loaded_0{
+    width: 0%;
+}
+.loaded_1{
+    width: 25%;
+    background-color: red;
+    height: 15px;
+    transition: all 1s;
+}
+.loaded_2{
+    width: 50%;
+    background-color: orange;
+    height: 15px;
+    transition: all 1s;
+}
+.loaded_3{
+    width: 75%;
+    background-color: yellow;
+    height: 15px;
+    transition: all 1s;
+}
+.loaded_4{
+    width: 100%;
+    background-color: green;
+    height: 15px;
+    transition: all 1s;
 }
