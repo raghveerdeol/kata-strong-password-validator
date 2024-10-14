@@ -5,6 +5,7 @@ addEventListener('input', (event) => {
     console.log(inputData);
     lengthValidation(inputData);
     capitalValidation(inputData);
+    numberValidation(inputData);
 });
 
 
@@ -20,7 +21,7 @@ function lengthValidation(element) {
     } else {
         ValidationElement.classList.remove('tick');
         ValidationElement.classList.add('cross');
-    }
+    };
 };
 
 // capital validation function
@@ -33,5 +34,18 @@ function capitalValidation(element) {
     } else {
         ValidationElement.classList.remove('tick');
         ValidationElement.classList.add('cross');
-    }
+    };
 };
+
+// number validation function
+function numberValidation(element) {
+    let ValidationElement = document.getElementById('numberValidation');
+
+    if (element.match(/[0-9]/g)) {
+        ValidationElement.classList.remove('cross');
+        ValidationElement.classList.add('tick');
+    } else {
+        ValidationElement.classList.remove('tick');
+        ValidationElement.classList.add('cross');
+    };
+}
