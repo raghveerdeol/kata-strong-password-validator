@@ -6,6 +6,7 @@ addEventListener('input', (event) => {
     lengthValidation(inputData);
     capitalValidation(inputData);
     numberValidation(inputData);
+    specialCharacters(inputData);
 });
 
 
@@ -48,4 +49,17 @@ function numberValidation(element) {
         ValidationElement.classList.remove('tick');
         ValidationElement.classList.add('cross');
     };
-}
+};
+
+// special characters validation 
+function specialCharacters(element) {
+    let ValidationElement = document.getElementById('specialCharactersValidation');
+    
+    if (element.match(/[~!@#$%^&*_\-+=`|\\(){}\[\]:;"'<>,.?\/]/g)) {
+        ValidationElement.classList.remove('cross');
+        ValidationElement.classList.add('tick');
+    } else {
+        ValidationElement.classList.remove('tick');
+        ValidationElement.classList.add('cross');
+    };
+};
