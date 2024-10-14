@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #063241;
+}
+.container{
+    background-color: white;
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    width: 50%;
+    margin: auto;
+    margin-top: 7rem;
+    padding: 2rem 3rem;
+}
+h1{
+    text-align: center;
+}
+#passwordInput{
+    width: 100%;
+    border: 1px solid grey;
+    padding: 1rem;border-radius: 1rem;
+}
+ul{
+    list-style: none;
+    margin-top: 2rem;
+}
+.cross{
+    color: grey;
+}
+.cross::before{
+    content: 'X ';
+}
