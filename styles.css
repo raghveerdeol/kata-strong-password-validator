@@ -5,6 +5,7 @@
 }
 body{
     background-color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .main-container{
@@ -17,16 +18,21 @@ body{
 }
 h1{
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 2.5rem;
 }
 #passwordInput{
     width: 100%;
-    border: 1px solid grey;
-    padding: 1rem;border-radius: 1rem;
+    padding: 1rem;
+    border-bottom: 4px solid black;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
 }
+
 ul{
     list-style: none;
     margin-top: 2rem;
+    line-height: 1.5rem;
 }
 
 .cross{
@@ -36,10 +42,12 @@ ul{
     content: 'X ';
 }
 .tick{
-    color: green;
+    color: rgb(73, 233, 73);
+    transition: all 1s;
 }
 .tick::before{
     content: '✔ ';
+    transition: all 1s;
 }
 
 /* loaders  */
@@ -72,7 +80,7 @@ ul{
 }
 .loaded_3{
     width: 75%;
-    background-color: yellow;
+    background-color: rgb(196, 196, 19);
     height: 20px;
     transition: all 1s;
     border-bottom-left-radius: 1rem;
@@ -80,7 +88,7 @@ ul{
 }
 .loaded_4{
     width: 100%;
-    background-color: green;
+    background-color: rgb(29, 201, 29);
     height: 20px;
     transition: all 1s;
     border-bottom-left-radius: 1rem;
@@ -92,29 +100,69 @@ ul{
 /* container neons */
 .neon_1{
     box-shadow: 
+    0 0 10px red,
+    0 0 15px red,
     0 0 20px red,
-    0 0 30px red,
-    0 0 40px red,
-    0 0 50px red;
+    0 0 25px red;
+    transition: all 1s;
 }
 .neon_2{
     box-shadow: 
+    0 0 10px orange,
+    0 0 15px orange,
     0 0 20px orange,
-    0 0 30px orange,
-    0 0 40px orange,
-    0 0 50px orange;
+    0 0 25px orange;
+    transition: all 1s;
 }
 .neon_3{
     box-shadow: 
-    0 0 20px yellow,
-    0 0 30px yellow,
-    0 0 40px yellow,
-    0 0 50px yellow;
+    0 0 10px rgb(196, 196, 19),
+    0 0 15px rgb(196, 196, 19),
+    0 0 20px rgb(196, 196, 19),
+    0 0 25px rgb(196, 196, 19);
+    transition: all 1s;
 }
 .neon_4{
     box-shadow: 
-    0 0 20px green,
-    0 0 30px green,
-    0 0 40px green,
-    0 0 50px green;
+    0 0 10px rgb(29, 201, 29),
+    0 0 15px rgb(29, 201, 29),
+    0 0 20px rgb(29, 201, 29),
+    0 0 25px rgb(29, 201, 29);
+    transition: all 1s;
+}
+
+/* headging effects */
+.headging_0{
+    background-image: linear-gradient(87deg, rgba(29,201,29,1) 0%, rgba(29,201,29,0.7) 0%, rgba(255,0,0,0.7) 0%, rgba(255,0,0,0.6066759467458859) 100%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    transition: all 1s;
+}
+
+.headging_1{
+    background-image: linear-gradient(87deg, rgba(29,201,29,1) 0%, rgba(29,201,29,0.7) 27%, rgba(255,0,0,0.7) 33%, rgba(255,0,0,0.6066759467458859) 100%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    transition: all 1s;
+}
+
+.headging_2{
+    background-image: linear-gradient(87deg, rgba(29,201,29,1) 0%, rgba(50,183,26,0.7) 45%, rgba(255,0,0,0.7) 55%, rgba(255,0,0,0.6066759467458859) 100%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    transition: all 1s;
+}
+
+.headging_3{
+    background-image: linear-gradient(87deg, rgba(29,201,29,1) 0%, rgba(29,201,29,0.7) 60%, rgba(255,0,0,0.7) 66%, rgba(255,0,0,0.6066759467458859) 100%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    transition: all 1s;
+}
+
+.headging_4{
+    background-image: linear-gradient(87deg, rgba(29,201,29,1) 0%, rgba(29,201,29,0.7) 100%, rgba(255,0,0,0.7) 100%, rgba(255,0,0,0.6066759467458859) 100%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    transition: all 1s;
 }

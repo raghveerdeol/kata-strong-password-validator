@@ -4,6 +4,7 @@ addEventListener('input', (event) => {
     let inputData = document.getElementById('passwordInput').value.trim();
     let loaded = document.getElementById('loaded');
     let container = document.getElementById('container');
+    let headging = document.getElementById('headging');
     let loader = 0;
     console.log(inputData);
 
@@ -16,38 +17,49 @@ addEventListener('input', (event) => {
     // change class depende on loader number  
     if (loader === 0) {
         loaded.classList.add('loaded_0');
+        headging.classList.add('headging_0');
         
         loaded.classList.remove('loaded_1', 'loaded_2', 'loaded_3', 'loaded_4');
         container.classList.remove('neon_1', 'neon_2', 'neon_3', 'neon_4');
+        headging.classList.remove('headging_1', 'headging_2', 'headging_3', 'headging_4');
 
     } else if (loader === 1) {
         loaded.classList.add('loaded_1');
-        container.classList.add('neon_1')
+        container.classList.add('neon_1');
+        headging.classList.add('headging_1');
         
         loaded.classList.remove('loaded_0', 'loaded_2', 'loaded_3', 'loaded_4');
         container.classList.remove('neon_2', 'neon_3', 'neon_4');
+        headging.classList.remove('headging_0', 'headging_2', 'headging_3', 'headging_4');
 
     } else if (loader === 2) {
         loaded.classList.add('loaded_2');
-        container.classList.add('neon_2')
+        container.classList.add('neon_2');
+        headging.classList.add('headging_2');
+
         
         loaded.classList.remove('loaded_0', 'loaded_1', 'loaded_3', 'loaded_4');
         container.classList.remove('neon_1', 'neon_3', 'neon_4');
+        headging.classList.remove('headging_0', 'headging_1', 'headging_3', 'headging_4');
 
     } else if (loader === 3) {
         loaded.classList.add('loaded_3');
-        container.classList.add('neon_3')
+        container.classList.add('neon_3');
+        headging.classList.add('headging_3');
         
         loaded.classList.remove('loaded_0', 'loaded_1', 'loaded_2', 'loaded_4');
         container.classList.remove('neon_1', 'neon_2','neon_4');
+        headging.classList.remove('headging_0', 'headging_1', 'headging_2', 'headging_4');
 
     } else if (loader === 4) {
         loaded.classList.add('loaded_4');
-        container.classList.add('neon_4')
+        container.classList.add('neon_4');
+        headging.classList.add('headging_4');
         
         loaded.classList.remove('loaded_0', 'loaded_1', 'loaded_2', 'loaded_3');
         container.classList.remove('neon_1', 'neon_2', 'neon_3');
-
+        headging.classList.remove('headging_0', 'headging_1', 'headging_2', 'headging_3');
+    
     }
 });
 
